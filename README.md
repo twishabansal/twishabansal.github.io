@@ -13,7 +13,7 @@ deploy step.
 The PaperMod theme is a git submodule, so clone with submodules:
 
 ```bash
-git clone --recurse-submodules git@github.com:twishabansal/twishabansal.github.io.git
+git clone --recurse-submodules https://github.com/twishabansal/twishabansal.github.io.git
 cd twishabansal.github.io
 hugo server -D          # http://localhost:1313/ (-D includes drafts)
 ```
