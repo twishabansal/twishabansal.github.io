@@ -27,6 +27,10 @@ pygmentsUseClasses = true
     name = "github"
     url = "https://github.com/twishabansal"
 
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/twishabansal/"
+
 [menu]
   [[menu.main]]
     identifier = "posts"
@@ -34,10 +38,15 @@ pygmentsUseClasses = true
     url = "/posts/"
     weight = 10
   [[menu.main]]
+    identifier = "blogs"
+    name = "Blogs"
+    url = "/blogs/"
+    weight = 20
+  [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 20
+    weight = 30
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
