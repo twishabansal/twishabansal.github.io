@@ -38,15 +38,10 @@ pygmentsUseClasses = true
     url = "/posts/"
     weight = 10
   [[menu.main]]
-    identifier = "blogs"
-    name = "Blogs"
-    url = "/blogs/"
-    weight = 20
-  [[menu.main]]
     identifier = "tags"
     name = "Tags"
     url = "/tags/"
-    weight = 30
+    weight = 20
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
