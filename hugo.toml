@@ -1,0 +1,43 @@
+baseURL = "https://twishabansal.github.io/"
+languageCode = "en-us"
+title = "Twisha Bansal"
+theme = "PaperMod"
+
+enableRobotsTXT = true
+enableEmoji = true
+pygmentsUseClasses = true
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+  [params.homeInfoParams]
+    Title = "Hi, I'm Twisha 👋"
+    Content = "Welcome to my personal blog, where I write about engineering, databases, and AI tooling."
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/twishabansal"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
