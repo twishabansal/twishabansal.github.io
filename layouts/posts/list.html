@@ -1,0 +1,29 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+
+{{- if .Content }}
+<div class="post-content md-content">{{ .Content }}</div>
+{{- end }}
+
+{{- $blogs := where .RegularPages "Params.group" "mcp-toolbox" }}
+{{- $personal := .RegularPages | complement $blogs }}
+
+{{- range $personal }}
+{{- partial "post_card.html" . }}
+{{- end }}
+
+{{- with $blogs }}
+<h2 class="group-heading">From the MCP Toolbox Team</h2>
+{{- range . }}
+{{- partial "post_card.html" . }}
+{{- end }}
+{{- end }}
+
+{{- end }}{{- /* end main */ -}}
