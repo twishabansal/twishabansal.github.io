@@ -19,9 +19,18 @@ pygmentsUseClasses = true
   ShowCodeCopyButtons = true
   ShowToc = true
 
-  [params.homeInfoParams]
-    Title = "Hi, I'm Twisha 👋"
-    Content = "Welcome to my personal blog, where I write about engineering, databases, and AI tooling."
+  [params.profileMode]
+    enabled = true
+    title = "Hi, I'm Twisha 👋"
+    subtitle = "Engineer at Google working on AI tooling and MCP Toolbox for Databases. I write about databases, agent tooling, and shipping developer experiences that help LLMs talk to data."
+
+    [[params.profileMode.buttons]]
+      name = "Posts"
+      url = "/posts/"
+
+    [[params.profileMode.buttons]]
+      name = "Tags"
+      url = "/tags/"
 
   [[params.socialIcons]]
     name = "github"
